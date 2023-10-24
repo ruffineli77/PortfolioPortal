@@ -1,0 +1,46 @@
+
+{% extends "layout.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block content %}
+
+<div id="particles-js"></div>
+
+<div class="home-title" id="homeTitleColors">
+  <p class="title">
+    Elijah Ruffin
+  </p>
+  <p class="subtitle">
+    Software Developer
+  </p>
+</div>
+
+<div class="email-confirm-container fade-out" id="flashMessage">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+    <article class="message is-success is-small email-confirm-message">
+
+        {% for category, message in messages %}
+     <div class="message-header">
+        <p>Success</p>
+      </div>
+      <div class="message-body success success-{{ category }}">
+        <h2 class="subtitle">{{ message }}</h2>
+      </div>
+        {% endfor %}
+      {% endif %}
+    </article>
+
+    {% endwith %}
+</div>
+
+<script src={{ url_for('static', filename='js/particlesJS.js') }}></script>
+<script src={{ url_for('static', filename='js/particles.js') }}></script>
+<script src={{ url_for('static', filename='js/home.js') }}></script>
+<script>
+    let shouldShowFlashMessage = {% if get_flashed_messages() %}true{% else %}false{% endif %};
+    if (shouldShowFlashMessage) {
+      showFlashMessage();
+    }
+</script>
+
+{% endblock content %}

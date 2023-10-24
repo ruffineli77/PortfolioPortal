@@ -1,0 +1,36 @@
+{% extends "layout.html" %} {% block title %} {{title}} {% endblock %} {% block content %} <section class="section ">
+  <h1 class="title is-1">Frequently Asked Questions</h1>
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <h3 class="subtitle is-5">Website Development Faqs</h3>
+        <br>
+        <div class="faqs-dropdowns"> {% for faq in webdev_faqs %} <div class="faq-dropdown">
+            <div class="question-container" onclick="toggleDropdown(this)">
+                <p class="subtitle is-5">{{ faq.question }}</p>
+              <img src="{{ url_for('static', filename='svg_images/angle-down-solid.svg') }}" alt="Toggle">
+            </div>
+            <div class="answer-container" style="display: none;">
+{#              <p>{{ faq.answer }}</p>#}
+                <p class="subtitle is-5">{{ faq.answer }}</p>
+            </div>
+          </div> {% endfor %} </div>
+      </div>
+      <div class="column">
+        <h3 class="subtitle is-5">Software Development Faqs</h3>
+        <br>
+        <div class="faqs-dropdowns"> {% for faq in bio_faqs %} <div class="faq-dropdown">
+            <div class="question-container" onclick="toggleDropdown(this)">
+                <p class="subtitle is-5">{{ faq.question }}</p>
+
+              <img src="{{ url_for('static', filename='svg_images/angle-down-solid.svg') }}" alt="Toggle">
+            </div>
+            <div class="answer-container" style="display: none;">
+                <p class="subtitle is-5">{{ faq.answer }}</p>
+            </div>
+          </div> {% endfor %} </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="{{ url_for('static', filename='js/faqs.js') }}"></script> {% endblock content %}

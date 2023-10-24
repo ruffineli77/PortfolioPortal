@@ -1,0 +1,240 @@
+
+
+
+
+// Color Variables
+
+$light-color-1: #ffffff;
+$light-color-2: #e3e3e3;
+$light-filter: invert(100%) sepia(94%) saturate(0%) hue-rotate(248deg)
+  brightness(106%) contrast(106%);
+$light-text-color-filter-1: brightness(0) saturate(100%) invert(100%) sepia(0%)
+  saturate(378%) hue-rotate(139deg) brightness(106%) contrast(104%);
+$light-color-2-filter: invert(100%) sepia(0%) saturate(6167%) hue-rotate(319deg) brightness(113%) contrast(78%);
+$light-text-color-filter-2: brightness(0) saturate(100%) invert(88%) sepia(18%)
+  saturate(456%) hue-rotate(351deg) brightness(106%) contrast(104%);
+
+
+$dark-color-1: #090b0b;
+$dark-color-2: #1f2526;
+$dark-color-3: #212729;
+$dark-color-filter-1: invert(2%) sepia(8%) saturate(1103%) hue-rotate(131deg) brightness(100%) contrast(97%);
+$dark-color-filter-2: invert(13%) sepia(35%) saturate(189%) hue-rotate(149deg) brightness(89%) contrast(94%);
+$dark-background-color: linear-gradient(
+    to right,
+    $dark-color-1,
+    $dark-color-1,
+    $dark-color-3);
+
+$transparent-background: rgba(0,0,0,0.5);
+
+$theme-color-1: #9EF8EE;
+$theme-color-2: #9EF8EE;
+$theme-color-3: #1B1159;
+$theme-color-4: #101126;
+$theme-color-5: #6DCCF2;
+
+$button-hover-color: #363636;
+$button-hover-color-filter: invert(15%) sepia(25%) saturate(0%) hue-rotate(172deg) brightness(101%) contrast(85%);
+
+
+.dark-svg-image {
+  filter: $dark-color-filter-1;
+}
+.light-svg-image {
+  filter: $light-text-color-filter-1;
+}
+
+// Background Images
+$home-background-1: url("theme_images/home5.jpg");
+
+// General Layout
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s ease;
+}
+
+.page-content {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.footer-background-container {
+  background-color: black;
+}
+
+footer {
+  padding: 40px 40px  120px 40px;
+  background: black;
+}
+
+.footer-nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 20px;
+
+  .top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+
+    img {
+      align-self: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      a {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.trademark-bar {
+  color: white;
+}
+
+#blackWhiteBrand {
+  padding-right: 20px;
+  //padding: 0 20px 0 0;
+}
+
+#blackWhiteBrand:hover {
+  color: black;
+  background-color: white;
+  padding-right: 20px;
+}
+.navbar-brand {
+}
+.navbar-menu.is-active {
+  //margin: 50px;
+}
+
+.navbar-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .navbar-item {
+    text-align: left;
+    font-size: 1.1em;
+
+    @media screen and (max-width: 1023px) {
+      width: 100%;
+      font-size: 1.3em;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    flex-direction: column;
+  }
+}
+
+.navbar-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a:hover {
+    h3 {
+      color: $button-hover-color;
+    }
+    img {
+      filter: $button-hover-color-filter;
+    }
+  }
+  img {
+    width: 1.7rem;
+    height: 1.7rem;
+    filter: $light-color-2-filter;
+  }
+
+  h3 {
+      color: $light-color-2;
+  }
+
+    @media screen and (max-width: 768px) {
+    h3 {
+      display: none;
+    }
+  }
+}
+
+// Special Layout Classes
+// I want to get into the habit of using each framework or library in the way that the documentation suggests.
+// For CSS frameworks I'll check if a feature is already included before using a vanilla css/sass solution.
+// Some of these styles could be replaced with Bulma's variable substitution. Most of the colors are simple
+// enough to replace.
+
+.navbar.is-fixed-bottom {
+  height: 90px;
+  @media screen and (max-width: 1023px) {
+    height: auto;
+  }
+}
+
+.navbar {
+  align-items: center;
+}
+
+.navbar-link:hover, .navbar-link.is-active {
+  &::after {
+    $navbar-dropdown-arrow: black;
+    border-color: black !important;
+  }
+}
+
+.navbar-dropdown {
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.navbar-dropdown.is-active {
+  display: block;
+}
+
+.tools-dropdown:hover {
+    color: black;
+}
+
+// Bulma Variable Customization
+
+$button-background-color: black;
+$button-color: white;
+
+
+
+$navbar-item-hover-color:black;
+
+
+$navbar-item-hover-background-color: white;
+$navbar-dropdown-is-active :white;
+$navbar-background-color: black;
+$navbar-item-color: white;
+$navbar-item-active-color: black;
+$navbar-dropdown-background-color: black;
+$navbar-dropdown-border-top : blue;
+$navbar-dropdown-arrow: white;
+
+// This affects too many elements for me to justify using it over the lightBurger id.
+//$link-hover: white;
+#lightBurger{
+  color: white
+}
+
+@import "mybulma/bulma-0.9.4/bulma/bulma.sass";

@@ -1,0 +1,50 @@
+[
+  {
+    "question": "What is the focus of my software development portfolio?",
+    "answer": "My portfolio is a showcase of my capabilities in web development. I primarily use Python and Flask for backend development and vanilla JavaScript for frontend tasks. I'm also exploring Django and React to broaden my skill set."
+  },
+  {
+    "question": "What technologies do I specialize in?",
+    "answer": "My specialization lies in Python, Flask, and vanilla JavaScript. While I'm adept with HTML and CSS, I'm also learning React and React Native to diversify my toolkit."
+  },
+  {
+    "question": "Do I have industry certifications or formal education in software development?",
+    "answer": "Although I don't have formal certifications, I've been learning Python for about 3 years and have applied this knowledge to various personal and professional projects. My commitment to self-education helps me stay current."
+  },
+  {
+    "question": "How do I approach a new project?",
+    "answer": "When tackling a new project, I stick to a structured framework that encompasses planning, design, development, testing, and deployment. This agile approach allows me to adapt to changes in project requirements."
+  },
+  {
+    "question": "Do I adhere to coding standards and best practices?",
+    "answer": "Absolutely. I make it a point to adhere to best practices and coding standards, including W3C guidelines, to ensure the quality and maintainability of my applications."
+  },
+  {
+    "question": "What measures do I take for data security in my projects?",
+    "answer": "Data security is a top priority for me. I employ encryption and secure storage solutions, and I follow industry best practices to protect data."
+  },
+  {
+    "question": "Is my code optimized for performance and responsiveness?",
+    "answer": "Yes, I pay close attention to performance optimization and responsive design to ensure that my applications deliver a smooth user experience across various devices."
+  },
+  {
+    "question": "How do I keep my skills up-to-date?",
+    "answer": "I'm committed to continuous learning. I regularly take online courses, follow tutorials, and practice coding exercises. I also keep up with industry trends to stay ahead."
+  },
+  {
+    "question": "What is my experience with version control systems?",
+    "answer": "I'm proficient in using Git for version control. It's an integral part of my workflow for managing codebases, collaborating with others, and keeping track of code changes."
+  },
+  {
+    "question": "Do I have experience in team projects or mostly solo endeavors?",
+    "answer": "I'm comfortable in both settings. I can handle projects independently but also appreciate the collaborative aspects of team projects and have had successful experiences in team environments."
+  },
+  {
+    "question": "How can a potential employer contact me?",
+    "answer": "Potential employers can reach out to me through the 'Contact Me' section on my portfolio website. My email and LinkedIn details are also available there."
+  },
+  {
+    "question": "Do I contribute to open-source projects?",
+    "answer": "Yes, I contribute to two popular open-source projects, Werkzeug and Flask. Whenever I face an issue I can't solve, I delve into the documentation of both projects to expand my understanding."
+  }
+]

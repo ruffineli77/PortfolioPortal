@@ -1,0 +1,36 @@
+{% extends "layout.html" %} {% block title %} {{title}} {% endblock %} {% block content %} <section class="section">
+  <h1 class="title is-1">Work Experience</h1>
+  <div class="experience-section section-container">
+    <p class="large-article"> My work experience comes from personal projects and my open source contributions. Creating full-stack applications gave me a detailed look into the software development life cycle. This experience will allow me to fit into various roles based on the needs of any company or team. </p>
+    <div class="">
+      <p class="title is-4">Backend Development</p>
+      <p class="subtitle is-5">Mastering Server-Side Logic</p>
+      <p class="large-article"> While I haven't had formal work experience, my proficiency in backend development comes from extensive self-study and hands-on projects. Over the last few years, I've been building web applications using Python and Flask, focusing on server-side logic, database management, and APIs. I've built RESTful APIs, integrated third-party services, and utilized technologies such as Cron for background tasks and Celery for handling asynchronous tasks. I have also dealt with security measures like JWT and OAuth2 for authentication. These projects have given me an in-depth understanding of the web applications and the development life cycle, preparing me to adapt and excel in professional settings. </p>
+    </div>
+    <div class="">
+      <p class="title is-4">Frontend Development</p>
+      <p class="subtitle is-5">Crafting User Meaningful Experience</p>
+      <p class="large-article"> Even though my primary interest lies in backend development, I have gained solid experience in frontend technologies as well. I've designed and developed user interfaces using HTML, HTMX, CSS, SCSS, vanilla JavaScript, and Jquery focusing on responsiveness and user experience. My frontend toolchain includes using libraries like Bootstrap for styling and utilizing build tools such as Webpack to manage dependencies and optimize performance. These frontend skills have enabled me to work on full-stack projects, providing a comprehensive approach to web application development. </p>
+    </div>
+    <div class="">
+      <p class="title is-4">Development Operations</p>
+      <p class="subtitle is-5">Faithful Deployment & Server Management</p>
+      <p class="large-article"> My experience in DevOps is in its early stages but has already provided me with valuable insights. I've successfully deployed web applications, including this one, on a VPS using Nginx and managed them using SSH. Although this level of expertise might be considered basic in a specialized DevOps role, it sets me apart from many entry-level web developers and shows my ability to handle deployment and basic server management. Using the command line on any operating system is no problem, and I've started to dive deeper into Shell scripting. I have started exploring containerization technologies like Docker to streamline deployment and have begun familiarizing myself with orchestration tools like Kubernetes. I wrote this readme file to help me understand the full deployment process before I create my own script to automate the entire workflow. <a href=https://github.com/ruffineli77/DevOpsGuide target="_blank">DevOps Guide</a>
+      </p>
+    </div>
+    <div class="">
+      <p class="title is-4">Project Management</p>
+      <p class="subtitle is-5">Organizing Development Lifecycles</p>
+      <p class="large-article"> While most of my experience is in hands-on coding, I appreciate the importance of effective project management. Through the use of Agile methodologies and Scrum frameworks in Jira, I've honed my ability to manage my personal projects. I regularly conduct Agile sprints, use Scrum boards for task management, and develop user stories and acceptance criteria to make sure projects stay focused and deliver value. This has given me valuable insights into task decomposition, work prioritization, and adaptability to changing requirements—skills I am eager to apply in a collaborative team environment. </p>
+    </div>
+    <div class="">
+      <p class="title is-4">My Perfect Position</p>
+      <p class="subtitle is-5">Finding My Niche in Software Development</p>
+      <p class="large-article"> My ideal role would merge my passion for server-side programming with project management responsibilities. I thrive on solving complex backend problems and implementing scalable solutions. Coupling this with the organization and planning of project management would make a position exceptionally rewarding for me. I'm particularly interested in joining a tech-forward company, focused on AI or cloud-based services, where I can take on both technical and managerial challenges. I look forward to roles that offer this blend of technical and managerial challenges. </p>
+    </div>
+    <div class="description-section">
+      <h4 class="title is-4"> In conclusion, while I may lack traditional work experience, my hands-on full-stack projects demonstrate my skills, initiative, and readiness for the professional world. I bring a strong foundation in Python and Flask and am eager to contribute to a dynamic team and expand my skills. </h4>
+    </div>
+  </div>
+</section>
+<script src={{ url_for('static', filename='js/faqs.js') }}></script> {% endblock content %}

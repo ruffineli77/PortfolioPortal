@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{{ title }}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="#">
+  </head>
+  <body>
+    <nav class="navbar top-navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a href="{{ url_for('main.home') }}" class="navbar-item" id="blackWhiteBrand"> Ruffin.Bio </a>
+        <a role="button" class="navbar-burger" id="lightBurger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navbarBasicExample">
+        <div class="navbar-start">
+          <a href="{{ url_for('about.bio') }}" class="navbar-item"> About Me </a>
+          <a href="{{ url_for('about.experience') }}" class="navbar-item"> Work Experience </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" id="dropdownArrowElement" aria-label="apisMenu" aria-expanded="false" data-target="apisDropdown"> APIs </a>
+            <div class="navbar-dropdown" id="apisDropdown">
+              <a href="https://github.com/ruffineli77/ArchetypeApp" target="_blank" class="navbar-item"> The Archetype API </a>
+              <hr class="navbar-divider">
+              <a href="{{ url_for('main.projects') }}" class="navbar-item"> All Projects </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" aria-label="apisMenu" aria-expanded="false" data-target="websitesDropdown"> Websites </a>
+            <div class="navbar-dropdown" id="websitesDropdown">
+              <a href="https://github.com/ruffineli77/PortfolioPortal" target="_blank" class="navbar-item"> Personal Portfolio </a>
+              <a href="https://github.com/ruffineli77/InstagramClone" target="_blank" class="navbar-item"> Social Media Platform </a>
+              <a href="https://github.com/ruffineli77/DonationWebsite" target="_blank" class="navbar-item"> Nonprofit Donations </a>
+              <hr class="navbar-divider">
+              <a href="{{ url_for('main.projects') }}" class="navbar-item"> All Projects </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" aria-label="toolsMenu" aria-expanded="false" data-target="toolsDropdown"> Tools </a>
+            <div class="navbar-dropdown" id="toolsDropdown">
+              <a href="https://github.com/ruffineli77/AdobeExpressClone" target="_blank" class="navbar-item"> Photo and Video Editing </a>
+              <hr class="navbar-divider">
+              <a href="{{ url_for('main.projects') }}" class="navbar-item"> All Projects </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" aria-label="iotMenu" aria-expanded="false" data-target="iotDropdown"> IoT </a>
+            <div class="navbar-dropdown" id="iotDropdown">
+              <a href="https://github.com/ruffineli77/WildlifeCamera.git" target="_blank" class="navbar-item"> Wildlife Camera </a>
+              <hr class="navbar-divider">
+              <a href="{{ url_for('main.projects') }}" class="navbar-item"> All Projects </a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a href="{{ url_for('contact.contact') }}" class="button is-link">
+                <strong>Contact Me</strong>
+              </a>
+              <a href="{{ url_for('about.resume') }}" class="navbar-item button is-light"> Resume </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="page-content" id="renderedContent"> {% block content %} {% endblock %} </div>
+    <footer class="">
+      <div class="footer-nav-links">
+        <div class="bottom-section">
+          <ul class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
+            <li class="m-4">
+              <a class="button" href="{{ url_for('contact.contact' ) }}">Contact</a>
+            </li>
+            <li class="m-4">
+              <a class="button" href="{{ url_for('about.resume' ) }}">Resume</a>
+            </li>
+            <li class="m-4">
+              <a class="button" href="https://github.com/ruffineli77" target="_blank">Github</a>
+            </li>
+            <li class="m-4">
+              <a class="button" href="{{ url_for('main.home') }}">Home</a>
+            </li>
+            <li class="m-4">
+              <a class="button" href="https://www.linkedin.com/in/elijah-ruffin-2400a8216" target="_blank">LinkedIn</a>
+            </li>
+            <li class="m-4">
+              <a class="button" href="https://github.com/ruffineli77/PortfolioPortal" target="_blank">This Site</a>
+            </li>
+            <li class="m-4">
+              <a class="button" href="{{ url_for('faqs.faqs') }}">FAQs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
+      <div class="trademark-bar">
+        <div class="is-flex-tablet is-justify-content-between is-align-items-center">
+          <p>MIT License © Elijah Ruffin 2023</p>
+          <div class="py-2 is-hidden-tablet"></div>
+          <div class="ml-auto">
+            <a class="mr-4 is-inline-block" href="#">
+              <img class="light-svg-image" src="{{ url_for('static', filename='svg_images/twitter.svg') }}" alt="">
+            </a>
+            <a class="mr-4 is-inline-block" href="#">
+              <img class="light-svg-image" src="{{ url_for('static', filename='svg_images/instagram.svg') }}" alt="">
+            </a>
+            <a class="mr-4 is-inline-block" href="#">
+              <img class="light-svg-image" src="{{ url_for('static', filename='svg_images/facebook.svg') }}" alt="">
+            </a>
+            <a class="mr-4 is-inline-block" href="#">
+              <img class="light-svg-image" src="{{ url_for('static', filename='svg_images/youtube.svg') }}" alt="">
+            </a>
+            <a class="is-inline-block" href="#">
+              <img class="light-svg-image" src="{{ url_for('static', filename='svg_images/tiktok.svg') }}" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    {#    <nav class="navbar is-fixed-bottom has-text-centered navbar-menu is-active ">#}
+    {#      <div class="navbar-center">#}
+    {#        <div class="container is-flex is-justify-content-space-around">#}
+    {#          <a href="{{ url_for('main.projects') }}">#}
+    {#            <img src="{{ url_for('static', filename='svg_images/lightning-charge.svg') }}" alt="Search Button">#}
+    {#            <h3>Electronics</h3>#}
+    {#          </a>#}
+    {#          <a href="{{ url_for('main.projects') }}">#}
+    {#            <img src="{{ url_for('static', filename='svg_images/tools.svg') }}" alt="Tools Link">#}
+    {#            <h3>Tools</h3>#}
+    {#          </a>#}
+    {#          <a href="{{ url_for('main.home') }}">#}
+    {#            <img src="{{ url_for('static', filename='svg_images/house-door.svg') }}" alt="Community Link">#}
+    {#            <h3>Home</h3>#}
+    {#          </a>#}
+    {#          <a href="{{ url_for('main.projects') }}">#}
+    {#            <img src="{{ url_for('static', filename='svg_images/globe.svg') }}" alt="Photo Gallery">#}
+    {#            <h3>Websites</h3>#}
+    {#          </a>#}
+    {#          <a href="{{ url_for('main.projects') }}">#}
+    {#            <img src="{{ url_for('static', filename='svg_images/gear-wide.svg') }}" alt="Video Gallery">#}
+    {#            <h3>APIs</h3>#}
+    {#          </a>#}
+    {#        </div>#}
+    {#      </div>#}
+    {#    </nav>#}
+    <script src={{ url_for('static', filename='js/app.js') }}></script>
+  </body>
+</html>

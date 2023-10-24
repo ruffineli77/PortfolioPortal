@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What types of web development services do I offer?",
+    "answer": "I offer a comprehensive range of web development services, which includes frontend and backend development, web design, mobile app development, e-commerce solutions, and SEO optimization."
+  },
+  {
+    "question": "Do I build websites using a particular tech stack?",
+    "answer": "I have experience with multiple tech stacks and adapt based on project requirements. Typically, I use Python with Flask for the backend and specialize in both vanilla JavaScript and SCSS for frontend development."
+  },
+  {
+    "question": "How does my development process work?",
+    "answer": "My approach to development involves planning, designing, coding, testing, and deployment. I employ agile methodologies to adapt to changing requirements and challenges."
+  },
+  {
+    "question": "Do I offer post-launch maintenance and support?",
+    "answer": "Absolutely, I offer ongoing maintenance and support packages. These include performance monitoring, bug fixes, and updates to keep your website or application running smoothly."
+  },
+  {
+    "question": "Do I also provide hosting solutions?",
+    "answer": "Yes, I offer tailored hosting solutions to meet the scale and needs of your project, whether it's a personal blog or a large enterprise application."
+  },
+  {
+    "question": "Do I follow industry best practices and standards?",
+    "answer": "Certainly, I strictly adhere to industry best practices and standards, including compliance with W3C guidelines, to ensure the quality, performance, and security of your web application."
+  },
+  {
+    "question": "How do I handle data security?",
+    "answer": "I prioritize data security, using state-of-the-art encryption and secure storage solutions. I also adhere to industry best practices for safeguarding data."
+  },
+  {
+    "question": "Do I have experience in responsive design?",
+    "answer": "Yes, all the projects I work on are optimized for mobile and desktop, ensuring a top-notch user experience across different devices."
+  },
+  {
+    "question": "What is my payment structure?",
+    "answer": "My payment structure is flexible and varies based on the scope and size of the project. Generally, I require an initial deposit, followed by milestone-based payments."
+  },
+  {
+    "question": "Do I offer SEO services?",
+    "answer": "Yes, I provide comprehensive SEO services to improve your website's search engine rankings and visibility."
+  },
+  {
+    "question": "How long does it typically take to complete a project?",
+    "answer": "The timeline for project completion depends on its complexity and scope. Following Agile methodology, a straightforward website might take 4-6 weeks, whereas a complex application could require several months."
+  },
+  {
+    "question": "Can you see some examples of my past work?",
+    "answer": "Of course! My portfolio is available on my website, featuring a few of the projects that I have completed many are still works in progress and include feature lists and changelogs. "
+  },
+  {
+    "question": "How do I handle project delays?",
+    "answer": "While I strive to adhere to project timelines, if a delay does occur, I communicate transparently and proactively to keep you in the loop. We can then discuss any required adjustments to the project scope or timeline."
+  },
+  {
+    "question": "Do I provide documentation for the projects?",
+    "answer": "Yes, I provide complete documentation, which will help you understand the architecture, setup, and any custom code in your project."
+  },
+  {
+    "question": "What if you want to make changes to the project after it's completed?",
+    "answer": "I offer a warranty period for minor adjustments and bug fixes. For larger changes, we can discuss options for additional development work."
+  }
+]

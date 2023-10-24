@@ -1,0 +1,14 @@
+{% extends "layout.html" %} {% block title %} {{title}} {% endblock %} {% block content %} <section class="section">
+  <h1 class="title is-3" id="all-projects">All Projects</h1>
+  <div class="project-section section-container">
+    <h2 class="title is-3" id="static-dynamic-websites">Static/Dynamic Websites</h2>
+    <p class="large-article"> I've worked on various static and dynamic websites. For static websites, I often use HTML, CSS, and basic JavaScript. For more dynamic sites, I utilize Flask to build robust and scalable server-side logic. If you're interested in high-performance, data-intensive websites, you'll find my use of PostgresSQL and cloud-based AWS services aligns well with modern development practices. </p>
+    <h2 class="title is-3" id="rest-apis">REST APIs</h2>
+    <p class="large-article"> API development is a cornerstone of my backend expertise. I build RESTful APIs that are efficient, scalable, and secure. Employing Flask, Python, and PostgresSQL, I can construct APIs that serve data-intensive applications, be it for NLP models or straightforward CRUD apps. </p>
+    <h2 class="title is-3" id="iot-devices">IoT Devices (Raspberry Pi/Arduino)</h2>
+    <p class="large-article"> My experience extends into the realm of IoT, where I've tinkered with Raspberry Pi and Arduino to build smart devices. Whether you're interested in home automation or data collection from sensors, my background in systems and cloud services ensures a seamless data pipeline from device to server. </p>
+    <h2 class="title is-3" id="web-tools">Web-based Tools</h2>
+    <p class="large-article"> Beyond full-fledged applications, I also build smaller, focused web tools like calculators or random wheel pickers. These projects often showcase my frontend skills and my ability to construct intuitive user interfaces, but can also include complex algorithms running on the server-side, thanks to my backend experience. </p>
+  </div>
+</section>
+<script src="{{ url_for('static', filename='js/projects.js') }}"></script> {% endblock content %}

@@ -1,0 +1,21 @@
+
+{% extends "layout.html" %}
+{% block title %} {{title}} {% endblock %}
+{% block content %}
+
+<section class="section">
+    <h1 class="title is-1">404 Error</h1>
+</section>
+
+<div class="columns">
+    <div class="column is-half is-offset-one-quarter">
+        <article class="message is-danger">
+          <div class="message-header">
+            <p>404 Error: Page Not Found</p>
+          </div>
+          <div class="message-body">
+            Sorry, the page you're looking for doesn't exist. Please check the URL or return to the homepage.          </div>
+        </article>
+    </div>
+</div>
+{% endblock content %}
