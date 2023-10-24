@@ -1,5 +1,5 @@
 
-# Personal Porfolio Application
+# Personal Portfolio Application
 
 ## Introduction
 
