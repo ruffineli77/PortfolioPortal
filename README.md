@@ -1,5 +1,5 @@
 
-# Skill Set Showcase Application
+# Personal Porfolio Application
 
 ## Introduction
 
