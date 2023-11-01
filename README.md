@@ -5,7 +5,7 @@
 
 Welcome to the repository for my professional portfolio! This portfolio showcases my skills and projects in web development. It serves as a comprehensive display of what I can offer to future employers and collaborators.
 
-> For hiring managers: You can directly reach out to me through the [Contact Page](https://ruffin.bio/contact) in the top navbar.
+> For hiring managers: You can directly reach out to me through the [Contact Page](https://ruffinweb.com/contact) in the top navbar.
 
 ## About the Portfolio
 
@@ -34,7 +34,7 @@ I plan to expand Flask skills to Django, and my JavaScript skills and delve into
 
 ## Additional Resources
 
-- I have a detailed markdown file explaining the development and deployment process of this portfolio. You can check it [here](https://github.com/ruffineli77/DevOpsGuide).
+- I have a detailed markdown file explaining the development and deployment process of this portfolio. You can check it [here](https://github.com/ruffinweb/DevOpsGuide).
 - For more about my work, you can also visit my other personal websites linked in the portfolio.
 
 ## Contact Page
