@@ -1,8 +1,8 @@
 
-from database import db
+from portfolioPortal.database import db
 from flask import current_app
 from flask import Blueprint, render_template
-from cv_app.faqs.models import FaQuestion
+from portfolioPortal.cv_app.faqs.models import FaQuestion
 from pathlib import Path
 
 faqs_bp = Blueprint('faqs', __name__, template_folder='templates')

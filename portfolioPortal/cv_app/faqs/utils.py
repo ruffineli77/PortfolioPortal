@@ -1,8 +1,8 @@
 
 import json
 from flask import current_app
-from database import db
-from cv_app.faqs.models import FaQuestion
+from portfolioPortal.database import db
+from portfolioPortal.cv_app.faqs.models import FaQuestion
 from pathlib import Path
 
 

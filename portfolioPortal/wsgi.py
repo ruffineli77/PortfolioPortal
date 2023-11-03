@@ -1,9 +1,9 @@
 
 import os
-from cv_app import create_app
-from cv_app.config import ProductionConfig, DevelopmentConfig, TestingConfig
+from portfolioPortal.cv_app import create_app
+from portfolioPortal.cv_app.config import ProductionConfig, DevelopmentConfig, TestingConfig
 
-env = os.environ.get('FLASK_DEBUG', 'production')
+env = os.environ.get('FLASK_DEBUG', 'development')
 address, port = os.environ.get('CV_APP_ADDRESS').split(':')
 
 

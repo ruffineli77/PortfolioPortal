@@ -1,7 +1,4 @@
 
-
-
-
 // Color Variables
 
 $light-color-1: #ffffff;
@@ -13,7 +10,6 @@ $light-text-color-filter-1: brightness(0) saturate(100%) invert(100%) sepia(0%)
 $light-color-2-filter: invert(100%) sepia(0%) saturate(6167%) hue-rotate(319deg) brightness(113%) contrast(78%);
 $light-text-color-filter-2: brightness(0) saturate(100%) invert(88%) sepia(18%)
   saturate(456%) hue-rotate(351deg) brightness(106%) contrast(104%);
-
 
 $dark-color-1: #090b0b;
 $dark-color-2: #1f2526;
@@ -44,13 +40,25 @@ $button-hover-color-filter: invert(15%) sepia(25%) saturate(0%) hue-rotate(172de
 .light-svg-image {
   filter: $light-text-color-filter-1;
 }
+.bottom-logo {
+  width: 200px;
+  height: 200px;
+}
+
+@font-face {
+    font-family: brand-font;
+    font-weight: bold;
+    src: url("fonts/loveloBlack.otf") format("opentype");
+}
 
 // Background Images
+
 $home-background-1: url("theme_images/home5.jpg");
 
 // General Layout
 
 body {
+  //font-family: brand-font, serif;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -58,8 +66,9 @@ body {
 }
 
 .page-content {
-  width: 100%;
-  min-height: 100vh;
+  //width: 100%;
+  //height: 100vh;
+  //height: 1000%;
 }
 
 .footer-background-container {
@@ -67,7 +76,7 @@ body {
 }
 
 footer {
-  padding: 40px 40px  120px 40px;
+  padding: 40px 40px  40px 40px;
   background: black;
 }
 
@@ -95,11 +104,6 @@ footer {
         justify-content: center;
       }
     }
-  }
-  .bottom-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 }
 
@@ -216,12 +220,7 @@ footer {
 
 $button-background-color: black;
 $button-color: white;
-
-
-
 $navbar-item-hover-color:black;
-
-
 $navbar-item-hover-background-color: white;
 $navbar-dropdown-is-active :white;
 $navbar-background-color: black;
@@ -230,6 +229,8 @@ $navbar-item-active-color: black;
 $navbar-dropdown-background-color: black;
 $navbar-dropdown-border-top : blue;
 $navbar-dropdown-arrow: white;
+$body-family: brand-font;
+
 
 // This affects too many elements for me to justify using it over the lightBurger id.
 //$link-hover: white;

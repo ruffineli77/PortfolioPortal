@@ -1,5 +1,5 @@
-{% extends "layout.html" %} {% block title %} {{title}} {% endblock %} {% block content %} <div class="contact-container"> {#    
-	<div class="form-fields">#} {#Whahah#} {#    </div>#} <div class="">
+{% extends "layout.html" %} {% block title %} {{title}} {% endblock %} {% block content %}
+<div class="contact-container">
     <h1 class="title is-1">Contact</h1>
     <p class="subtitle is-4">Complete the form below, and I'll reply with an automated confirmation email. </p>
     <div class="columns">
@@ -47,6 +47,5 @@
         </form>
       </div>
     </div>
-  </div>
 </div>
 <script src={{ url_for('static', filename='js/contact.js') }}></script> {% endblock content %}

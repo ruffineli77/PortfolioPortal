@@ -1,36 +1,62 @@
 
 {% extends "layout.html" %}
 {% block title %}{{title}}{% endblock %}
+
 {% block content %}
+<div id="particles-js">
+  <div class="content-wrapper">
+    <div class="home-title" id="homeTitleColors">
+        <p class="title">
+        Elijah Ruffin
+        </p>
+        <p class="subtitle">
+        Software Developer
+        </p>
+    </div>
+    <div class="bottom-section">
+      <ul class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
+        <li class="m-4">
+          <a class="button" href="{{ url_for('contact.contact' ) }}">Contact</a>
+        </li>
+        <li class="m-4">
+          <a class="button" href="{{ url_for('about.resume' ) }}">Resume</a>
+        </li>
+        <li class="m-4">
+          <a class="button" href="https://github.com/ruffinweb" target="_blank">Github</a>
+        </li>
+        <li class="m-4">
+          <a class="button" href="{{ url_for('main.home') }}">Home</a>
+        </li>
+        <li class="m-4">
+          <a class="button" href="https://www.linkedin.com/in/elijah-ruffin-2400a8216" target="_blank">LinkedIn</a>
+        </li>
+        <li class="m-4">
+          <a class="button" href="https://github.com/ruffinweb/PortfolioPortal" target="_blank">This Site</a>
+        </li>
+        <li class="m-4">
+          <a class="button" href="{{ url_for('faqs.faqs') }}">FAQs</a>
+        </li>
+      </ul>
+    </div>
+    <div class="email-confirm-container fade-out" id="flashMessage">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+        <article class="message is-success is-small email-confirm-message">
 
-<div id="particles-js"></div>
+            {% for category, message in messages %}
+         <div class="message-header">
+            <p>Success</p>
+          </div>
+          <div class="message-body success success-{{ category }}">
+            <h2 class="subtitle">{{ message }}</h2>
+          </div>
+            {% endfor %}
+          {% endif %}
+        </article>
 
-<div class="home-title" id="homeTitleColors">
-  <p class="title">
-    Elijah Ruffin
-  </p>
-  <p class="subtitle">
-    Software Developer
-  </p>
-</div>
-
-<div class="email-confirm-container fade-out" id="flashMessage">
-    {% with messages = get_flashed_messages(with_categories=true) %}
-      {% if messages %}
-    <article class="message is-success is-small email-confirm-message">
-
-        {% for category, message in messages %}
-     <div class="message-header">
-        <p>Success</p>
-      </div>
-      <div class="message-body success success-{{ category }}">
-        <h2 class="subtitle">{{ message }}</h2>
-      </div>
-        {% endfor %}
-      {% endif %}
-    </article>
-
-    {% endwith %}
+        {% endwith %}
+    </div>
+  </div>
 </div>
 
 <script src={{ url_for('static', filename='js/particlesJS.js') }}></script>

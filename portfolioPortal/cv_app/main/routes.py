@@ -1,9 +1,9 @@
 
-from database import db
+from portfolioPortal.database import db
 from flask import Blueprint, render_template
-from cv_app.faqs.utils import insert_faqs
-from cv_app.faqs.models import FaQuestion
-from cv_app.contact.models import ContactFormModel
+from portfolioPortal.cv_app.faqs.utils import insert_faqs
+from portfolioPortal.cv_app.faqs.models import FaQuestion
+from portfolioPortal.cv_app.contact.models import ContactFormModel
 from sqlalchemy.exc import OperationalError
 from flask import current_app
 

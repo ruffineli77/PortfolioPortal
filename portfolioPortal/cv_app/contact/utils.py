@@ -1,6 +1,6 @@
 
 from flask_mail import Message
-from cv_app import mail
+from portfolioPortal.cv_app import mail
 
 
 def send_contact_email(name, company, email, subject, users_message):

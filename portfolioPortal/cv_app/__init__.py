@@ -2,8 +2,8 @@
 from flask import Flask
 from flask_bcrypt import Bcrypt
 from flask_mail import Mail
-from cv_app.config import ProductionConfig
-from database import db
+from portfolioPortal.cv_app.config import ProductionConfig
+from portfolioPortal.database import db
 
 
 bcrypt = Bcrypt()
@@ -19,11 +19,11 @@ def create_app(config_class=ProductionConfig):
     app.config.from_object(config_class)
 
     # Importing routes after the app is initialized to prevent a circular import.
-    from cv_app.main.routes import main_bp
-    from cv_app.faqs.routes import faqs_bp
-    from cv_app.contact.routes import contact_bp
-    from cv_app.about.routes import about_bp
-    from cv_app.errors.routes import errors_bp
+    from portfolioPortal.cv_app.main.routes import main_bp
+    from portfolioPortal.cv_app.faqs.routes import faqs_bp
+    from portfolioPortal.cv_app.contact.routes import contact_bp
+    from portfolioPortal.cv_app.about.routes import about_bp
+    from portfolioPortal.cv_app.errors.routes import errors_bp
 
     app.register_blueprint(main_bp)
     app.register_blueprint(faqs_bp)

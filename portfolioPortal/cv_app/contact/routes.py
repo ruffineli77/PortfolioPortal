@@ -1,9 +1,9 @@
 
-from database import db
+from portfolioPortal.database import db
 from flask import url_for, render_template, redirect, request, flash, Blueprint
-from cv_app.contact.models import ContactFormModel
-from cv_app.contact.forms import ContactForm
-from cv_app.contact.utils import send_contact_email, send_reply_email
+from portfolioPortal.cv_app.contact.models import ContactFormModel
+from portfolioPortal.cv_app.contact.forms import ContactForm
+from portfolioPortal.cv_app.contact.utils import send_contact_email, send_reply_email
 
 import os
 
@@ -36,7 +36,7 @@ def contact():
         send_contact_email(name, company, email, subject, users_message)
         send_reply_email(name, email, company)
 
-        flash('Your message has been recorded and an automated confirmation email has been sent.', 'success')
+        flash("I've received your message and a confirmation email has been sent.", 'success')
         return redirect(url_for('main.home'))
 
     return render_template('contact.html', title=title,

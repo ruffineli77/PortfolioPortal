@@ -1,23 +1,6 @@
 
 var bodyElement = document.querySelector('body')
 
-function toggleDarkMode() {
-    var dark_setting = localStorage.getItem('isDarkMode')
-    var body_element = document.body;
-    var dark_light_image = document.getElementById("dark-light-image")
-
-    body_element.classList.toggle("dark-mode");
-
-    if (body_element.classList.contains("dark-mode")){
-      localStorage.setItem('isDarkMode', true)
-      dark_light_image.src="static/svg_images/moon-solid.svg"
-    } else{
-      localStorage.setItem('isDarkMode', false)
-      dark_light_image.src="static/svg_images/sun-regular.svg"
-    }
-}
-
-
 // Open Top Dropdown. This smells and is dripping wet but it works.
 
 document.addEventListener('DOMContentLoaded', () => {

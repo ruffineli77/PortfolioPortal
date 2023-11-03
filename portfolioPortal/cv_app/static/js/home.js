@@ -23,5 +23,5 @@ function showFlashMessage() {
     element.addEventListener("transitionend", function() {
       element.className = element.className.replace(" fade-out", "");  // Remove fade-out class
     }, false);
-  }, 5000);  // 5 seconds after it appears
+  }, 7000);  // 5 seconds after it appears
 }

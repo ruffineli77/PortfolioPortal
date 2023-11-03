@@ -1,5 +1,5 @@
 
-from database import db
+from portfolioPortal.database import db
 
 
 class FaQuestion(db.Model):
