@@ -1,9 +1,18 @@
 
 import os
+import sys
+
+current_path = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, current_path)
+
+# Move the current working directory up one level to include portfolioPortal
+parent_path = os.path.dirname(current_path)
+sys.path.insert(0, parent_path)
+
 from portfolioPortal.cv_app import create_app
 from portfolioPortal.cv_app.config import ProductionConfig, DevelopmentConfig, TestingConfig
 
-env = os.environ.get('FLASK_DEBUG', 'development')
+env = os.environ.get('FLASK_DEBUG', 'production')
 address, port = os.environ.get('CV_APP_ADDRESS').split(':')
 
 
@@ -17,6 +26,7 @@ else:
     app = create_app(test)
 
 
+print(os.environ.get('CV_APP_ADDRESS'))
 # host_addr, port_num = app.config['CV_APP_ADDRESS'].split(':')[0], app.config['CV_APP_ADDRESS'].split(':')[1]
 host_addr, port_num = "0.0.0.0", app.config['CV_APP_ADDRESS'].split(':')[1]
 
